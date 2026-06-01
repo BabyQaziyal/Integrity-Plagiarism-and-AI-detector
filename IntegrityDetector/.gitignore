@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+
+# Raw datasets & large/derived data (kept locally, not versioned)
+models/*.csv
+models/*.docx
+models/checkpoints/
+data/interim/
+data/generated/
+data/splits/
+data/final_dataset.csv
+.cache/
+uploads/
+reports/
+*.db
+app.db
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Env / editor / OS
+.env
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

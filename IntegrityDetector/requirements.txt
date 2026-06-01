@@ -1,0 +1,39 @@
+# ──────────────────────────────────────────────────────────────────────────
+# AI Plagiarism & AI-Content Detector — Python dependencies
+# ──────────────────────────────────────────────────────────────────────────
+# IMPORTANT (NVIDIA CUDA): install the CUDA build of PyTorch FIRST, e.g.
+#   pip install torch --index-url https://download.pytorch.org/whl/cu121
+# then:  pip install -r requirements.txt
+# Verify with:  python scripts/check_gpu.py
+# ──────────────────────────────────────────────────────────────────────────
+
+# Core ML / data
+torch>=2.5.1            # CUDA build (cu121) — see note above
+numpy>=1.26
+pandas>=2.1
+scikit-learn>=1.4
+scipy>=1.11
+
+# NLP / transformers
+transformers>=4.44
+tokenizers>=0.19
+spacy>=3.7              # model: python -m spacy download en_core_web_sm
+textstat>=0.7          # readability metrics
+
+# Backend / API
+flask>=3.0
+flask-cors>=4.0
+flask-sqlalchemy>=3.1
+SQLAlchemy>=2.0
+python-dotenv>=1.0
+
+# Reports / templating
+reportlab>=4.1
+jinja2>=3.1
+
+# File parsing (uploads)
+pdfplumber>=0.11
+python-docx>=1.1
+
+# Utilities
+tqdm>=4.66
